@@ -9,6 +9,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "install": "^0.13.0",
+    "leaflet": "^1.9.4",
+    "npm": "^10.2.0",
+    "reset-css": "^5.0.2",
     "vue": "^3.3.4"
   },
   "devDependencies": {
