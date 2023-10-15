@@ -4,6 +4,8 @@ import 'leaflet/dist/leaflet.css'
 import 'reset-css';
 
 import FreeDraw from 'leaflet-freedraw';
+import 'leaflet-draw';
+import 'leaflet-draw/dist/leaflet.draw.css';
 
 export default {
   mounted() {
@@ -17,6 +19,11 @@ export default {
 
     const freeDraw = new FreeDraw();
     map.addLayer(freeDraw);
+
+    const drawControl = new L.Control.Draw({
+
+    });
+    map.addControl(drawControl);
   },
 };
 </script>
