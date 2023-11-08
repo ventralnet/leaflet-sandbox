@@ -3,10 +3,6 @@ import 'leaflet';
 import 'leaflet/dist/leaflet.css'
 import 'reset-css';
 
-import FreeDraw from 'leaflet-freedraw';
-import 'leaflet-draw';
-import 'leaflet-draw/dist/leaflet.draw.css';
-
 export default {
   mounted() {
     const map = L.map(this.$refs.mapEle, {
@@ -17,14 +13,6 @@ export default {
       noWrap: true,
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
-
-    const freeDraw = new FreeDraw();
-    map.addLayer(freeDraw);
-
-    const drawControl = new L.Control.Draw({
-
-    });
-    map.addControl(drawControl);
   },
 };
 </script>
